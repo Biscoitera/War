@@ -13,7 +13,9 @@ public class Tabuleiro {
 	List <País> paises = new ArrayList<País>();
 	
 	
-//Coloca todos os países do arquivo no tabuleiro	
+/**
+ * Coloca todos os países do arquivo no tabuleiro	
+ */
 public void inicia_Paises() {
 	File f1 = new File("src/Input.txt");
 	String linha = ""; 
@@ -58,14 +60,18 @@ public void inicia_Paises() {
 			p = new País(ID, nome);
 			paises.add(p);
 			//proxima linha
+			
 			linha = br.readLine();
+			
 		}
 		
-		//System.out.println(paises.get(2).getNome());
+		br.close();
 		 
 	}catch(IOException e){}
 }
-//Adiciona os vizinhos de cada país em seu array de vizinho
+/**
+ * Adiciona os vizinhos de cada país em seu array de vizinho
+ */
 public void set_Vizinhos() {
 	File f1 = new File("src/Vizinhos.txt");
 	String linha = ""; 
@@ -101,10 +107,13 @@ public void set_Vizinhos() {
 			//System.out.println("");
 			linha = br.readLine();
 			}
+		br.close();
 
 	}catch(IOException e){}
 }
-//Mostra todos os países do tabuleiro
+/**
+ * Mostra todos os países do tabuleiro
+ */
 public void print_Paises() {
 	int i = 0;
 	while(paises.size() > i) {
@@ -114,6 +123,9 @@ public void print_Paises() {
 		}
 	}
 }
+/**
+ * Cria novo tabuleiro
+ */
  public Tabuleiro(){
 		
 		this.inicia_Paises();

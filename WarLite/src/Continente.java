@@ -17,7 +17,10 @@ public class Continente {
 		paises.add(p);
 	}
 	
-	//VerificaControle
+	/**
+	 * Verifica se o continente todo é controlado por um só jogador.
+	 * @return O método retorna o id do jogador que controla todo o continente, caso não haja um só dono, retorna -1.
+	 */
 	int verControle() {
 		int id = -1;
 		

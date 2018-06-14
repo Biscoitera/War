@@ -17,7 +17,10 @@ public class País {
 		this.nome = nome;
 	}
 	
-	//Adiciona n soldados ao exercito de um país
+	/**
+	 * Adiciona n soldados ao exercito de um país
+	 * @param n Numero de soldados adicionados
+	 */
 	public void add_Exercito(int n) {
 		this.setExercito(this.getExercito() + n);
 	}
@@ -34,12 +37,18 @@ public class País {
 	public void setLevel(int level) {
 		Level = level;
 	}
-	
+	/**
+	 * Incrementa o nível do país
+	 */
 	public void levelUp() {
 		
 		this.setLevel(this.getLevel() + 1);
 	}
-	
+	/**
+	 * Cria um novo país com id e nome
+	 * @param id id do novo país
+	 * @param nome Nome do novo país
+	 */
 	public País (int id, String nome) {
 		this.exercito = 1;
 		//pID =
@@ -56,7 +65,9 @@ public class País {
 		this.exercito = exercito;
 	}
 	
-	//Mostra todos os vizinhos de um país
+	/**
+	 * Mostra todos os vizinhos de um país
+	 */
 	public void print_Vizinhos() {
 		int i = 0;
 		
@@ -65,7 +76,10 @@ public class País {
 			i++;
 		}
 	}
-	
+	/**
+	 * Cria uma batalha com o país p como alvo
+	 * @param p País alvo do ataque
+	 */
 	public void atacar(País p) {
 
 		Batalha b = new Batalha();	

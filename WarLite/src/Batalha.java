@@ -8,9 +8,9 @@ public class Batalha {
 	
 	/**
 	 * Gera uma batalha entre país x e o país y onde x é o país atacante e y o defensor. Os dois países jogam um dado, se o valor da defesa for igual ou maior que o atacante a defesa vence e o atacante não consegue conquistar o novo territorio.
-	 * @param x
-	 * @param y
-	 * @return
+	 * @param x País atacante
+	 * @param y País Defensor
+	 * @return  Retorna 1 quando o atacante vence e 0 quando a defesa vence
 	 */
 	public int luta(País x, País y) {
 		

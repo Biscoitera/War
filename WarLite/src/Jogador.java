@@ -32,7 +32,11 @@ public class Jogador {
 	}
 
 
-	//Procura territorios que foram sorteados para o jogador e os adiciona ao arrayList
+	/**
+	 * Procura territorios que foram sorteados para o jogador e os adiciona ao arrayList
+	 * 
+	 * @param tab Tabuleiro
+	 */
 	public void addPaises(Tabuleiro tab) {
 		int i = 0;
 		while(tab.paises.size() > i) {
@@ -43,7 +47,9 @@ public class Jogador {
 		}
 	}
 	
-	//Mostra os paises que o jogador controla
+	/**
+	 * Mostra os paises que o jogador controla
+	 */
 	public void print_Paises() {
 		int i = 0;
 		while(paises.size() > i) {
@@ -53,6 +59,12 @@ public class Jogador {
 			}
 		}
 	}
+	/**
+	 * Cria um novo jogador com id, nome e referência ao tabuleiro
+	 * @param id Id do jogador
+	 * @param nome Nome do jogador
+	 * @param tab Tabuleiro que está sendo usado para o jogo
+	 */
 	public Jogador(int id, String nome, Tabuleiro tab) {
 		
 		this.setpID(id);

@@ -6,7 +6,10 @@ public class Jogo {
 	List <Jogador> jogadores = new ArrayList<Jogador>();
 	Tabuleiro tab;
 	
-	//Cria os jogadores
+	/**
+	 * Inicia n jogadores
+	 * @param n número de jogadores a serem iniciados
+	 */
 	public void inicia_Jogadores(int n) {
 		int id = 0;
 
@@ -26,7 +29,10 @@ public class Jogo {
 		reader.close();
 	}
 	
-	//Sorteia os países aleatoriamente para os jogadores
+	/**
+	 * Sorteia os países aleatoriamente para os jogadores
+	 * @param n Numero de jogadores no sorteio de países
+	 */
 	public void sort_Paises(int n) {
 		int i = 0;
 		while (tab.paises.size() > i) {
@@ -35,7 +41,9 @@ public class Jogo {
 			i++;
 		}
 	}	
-	
+	/**
+	 * Funcão que inicia todo o jogo 
+	 */
 	public Jogo() {
 		
 		int n = 0;
